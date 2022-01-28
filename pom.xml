@@ -6,7 +6,11 @@
 
   <groupId>com.mobinet</groupId>
   <artifactId>antifraud-ms</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>client</module>
+  </modules>
 
   <name>antifraud-ms</name>
   <url></url>
