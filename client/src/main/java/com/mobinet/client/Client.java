@@ -11,7 +11,7 @@ public class Client {
     private String branchNumber;
     private String accountNumber;
     private String clientName;
-
+    private Double amount;
 
 
 }

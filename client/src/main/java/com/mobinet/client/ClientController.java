@@ -9,10 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("api/v1/clients")
-public class ClientController {
+public record ClientController(ClientService clientService) {
 
     public void resisterClient(@RequestBody ClientRegistrationRequest clientRegistrationRequest){
         log.info("New client registration {}", clientRegistrationRequest);
+
+
 
     }
 
