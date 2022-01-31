@@ -1,5 +1,9 @@
-package com.mobinet.client;
+package com.mobinet.client.service;
 
+
+import com.mobinet.client.controller.ClientRegistrationRequest;
+import com.mobinet.client.model.Client;
+import com.mobinet.client.repository.ClientRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,3 +17,4 @@ public record ClientService(ClientRepository clientRepository) {
         clientRepository.save(client);
     }
 }
+

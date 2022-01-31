@@ -1,6 +1,6 @@
-package com.mobinet.client;
+package com.mobinet.client.controller;
 
-
+import com.mobinet.client.service.ClientService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

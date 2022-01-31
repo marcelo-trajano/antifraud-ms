@@ -1,4 +1,4 @@
-package com.mobinet.client;
+package com.mobinet.client.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
