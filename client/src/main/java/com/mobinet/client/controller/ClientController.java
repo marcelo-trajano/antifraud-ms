@@ -12,12 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/v1/clients")
 public record ClientController(ClientService clientService) {
 
-    @PostMapping("/")
+    @PostMapping("")
     public void resisterClient(@RequestBody ClientRegistrationRequest clientRegistrationRequest){
         log.info("New client registration {}", clientRegistrationRequest);
         clientService.registerClient(clientRegistrationRequest);
     }
-
-
-
 }
