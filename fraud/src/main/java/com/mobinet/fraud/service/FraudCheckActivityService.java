@@ -6,7 +6,10 @@ import com.mobinet.fraud.repository.FraudCheckActivityRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public record FraudCheckActivityService(FraudCheckActivityRepository fraudCheckActivityRepository) {
+public class FraudCheckActivityService {
+
+    private FraudCheckActivityRepository fraudCheckActivityRepository;
+
     public void registerFraudCheckActivity(FraudCheckActivityRequest request){
         FraudCheckActivity fraud = FraudCheckActivity.builder()
                 .clientId(request.clientId())
@@ -14,5 +17,10 @@ public record FraudCheckActivityService(FraudCheckActivityRepository fraudCheckA
                 .createdAt(request.createdAt())
                 .build();
         fraudCheckActivityRepository.save(fraud);
-    };
+    }
+
+    public Boolean checkClientForFraud(Long clientID){
+        return false;
+    }
+
 }
